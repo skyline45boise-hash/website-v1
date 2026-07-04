@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline 45 Photography — Scott Conover</title>
+<meta name="description" content="Skyline 45 Photography — portfolio, experience, and contact for Scott Conover.">
+<link rel="preconnect" href="https://player.vimeo.com">
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --bg:#0b0b0d;
+  --bg-alt:#141416;
+  --fg:#f2f2f0;
+  --fg-dim:#a8a8ac;
+  --accent:#d7b56d;
+  --line:#232326;
+  --maxw:1100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  line-height:1.5;
+}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+header.site{
+  position:sticky;top:0;z-index:10;
+  background:rgba(11,11,13,.85);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+header.site .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:14px;padding-bottom:14px;
+}
+.brand{font-weight:700;letter-spacing:.04em;font-size:1.1rem;color:var(--fg)}
+.brand span{color:var(--accent)}
+nav a{margin-left:20px;color:var(--fg-dim);font-size:.9rem}
+nav a:hover{color:var(--fg);text-decoration:none}
+
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+h1,h2,h3{font-weight:700;margin:0 0 .4em}
+h2{font-size:1.6rem;color:var(--fg)}
+.eyebrow{color:var(--accent);text-transform:uppercase;font-size:.75rem;letter-spacing:.12em;margin:0 0 10px}
+
+.hero{padding-top:90px;padding-bottom:90px;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem)}
+.hero p{color:var(--fg-dim);font-size:1.1rem;max-width:560px;margin:14px auto 26px}
+.btn{
+  display:inline-block;padding:12px 26px;border:1px solid var(--accent);
+  color:var(--accent);border-radius:2px;font-size:.9rem;letter-spacing:.04em;
+}
+.btn:hover{background:var(--accent);color:#0b0b0d;text-decoration:none}
+
+.about-grid{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start}
+.about-grid img{border-radius:4px}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr}}
+
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+.grid figure{margin:0;overflow:hidden;background:var(--bg-alt);aspect-ratio:4/5}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.grid a:hover img{transform:scale(1.04)}
+
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(max-width:640px){.video-grid{grid-template-columns:1fr}}
+.video-facade{
+  position:relative;aspect-ratio:16/9;background:var(--bg-alt);
+  border-radius:4px;overflow:hidden;cursor:pointer;
+}
+.video-facade img{width:100%;height:100%;object-fit:cover;opacity:.6}
+.video-facade .play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+}
+.play-icon{
+  width:56px;height:56px;border-radius:50%;background:rgba(0,0,0,.5);
+  border:1px solid var(--accent);display:flex;align-items:center;justify-content:center;
+}
+.play-icon::after{content:"";border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent var(--accent);margin-left:4px}
+.video-facade iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-facade figcaption{
+  position:absolute;bottom:0;left:0;right:0;padding:8px 10px;
+  background:linear-gradient(transparent,rgba(0,0,0,.75));font-size:.85rem;color:var(--fg-dim)
+}
+
+.timeline{border-left:2px solid var(--line);padding-left:24px;margin-left:6px}
+.timeline .item{margin-bottom:28px;position:relative}
+.timeline .item::before{
+  content:"";position:absolute;left:-30px;top:6px;width:9px;height:9px;
+  border-radius:50%;background:var(--accent);
+}
+.timeline .role{font-weight:600}
+.timeline .meta{color:var(--fg-dim);font-size:.85rem;margin-bottom:6px}
+
+.refs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:640px){.refs{grid-template-columns:1fr}}
+blockquote{margin:0;padding:20px;background:var(--bg-alt);border-radius:4px;border:1px solid var(--line)}
+blockquote p{margin:0 0 10px;color:var(--fg-dim)}
+blockquote cite{font-style:normal;font-size:.85rem;color:var(--fg)}
+
+footer{padding:40px 0;text-align:center;color:var(--fg-dim);font-size:.85rem}
+footer a{color:var(--fg-dim)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">SKYLINE <span>45</span></div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#video">Video</a>
+      <a href="#cv">Experience</a>
+      <a href="#refs">References</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Photography &amp; Video</p>
+    <h1>Scott Conover</h1>
+    <p>[One or two lines — what you shoot, who you shoot it for, what makes your work distinct.]</p>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <img src="images/portrait.jpg" alt="Scott Conover" loading="lazy" width="200" height="240">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>[Short bio headline]</h2>
+      <p>[2-4 sentences: background, style, notable clients or projects, what you're looking for next.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <p class="eyebrow">Portfolio</p>
+    <h2>Selected Work</h2>
+    <p style="color:var(--fg-dim);margin-bottom:24px">Drop images into <code>/images</code> and reference them below. Each figure is a full-size photo, cropped to a fixed aspect ratio for a clean grid — click to view full resolution.</p>
+    <div class="grid">
+      <figure><a href="images/photo1.jpg" target="_blank" rel="noopener"><img src="images/photo1.jpg" alt="Describe this photo" loading="lazy"></a></figure>
+      <figure><a href="images/photo2.jpg" target="_blank" rel="noopener"><img src="images/photo2.jpg" alt="Describe this photo" loading="lazy"></a></figure>
+      <figure><a href="images/photo3.jpg" target="_blank" rel="noopener"><img src="images/photo3.jpg" alt="Describe this photo" loading="lazy"></a></figure>
+      <figure><a href="images/photo4.jpg" target="_blank" rel="noopener"><img src="images/photo4.jpg" alt="Describe this photo" loading="lazy"></a></figure>
+      <figure><a href="images/photo5.jpg" target="_blank" rel="noopener"><img src="images/photo5.jpg" alt="Describe this photo" loading="lazy"></a></figure>
+      <figure><a href="images/photo6.jpg" target="_blank" rel="noopener"><img src="images/photo6.jpg" alt="Describe this photo" loading="lazy"></a></figure>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="wrap">
+    <p class="eyebrow">Video</p>
+    <h2>Reels &amp; Films</h2>
+    <p style="color:var(--fg-dim);margin-bottom:24px">Videos load only on click — the Vimeo player never loads until you interact with a thumbnail, so this section costs nothing on page load.</p>
+    <div class="video-grid" id="videos">
+      <figure class="video-facade" data-vimeo-id="REPLACE_ID_1">
+        <img src="images/video1-thumb.jpg" alt="" loading="lazy">
+        <div class="play"><div class="play-icon"></div></div>
+        <figcaption>[Video title]</figcaption>
+      </figure>
+      <figure class="video-facade" data-vimeo-id="REPLACE_ID_2">
+        <img src="images/video2-thumb.jpg" alt="" loading="lazy">
+        <div class="play"><div class="play-icon"></div></div>
+        <figcaption>[Video title]</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="wrap">
+    <p class="eyebrow">Experience</p>
+    <h2>Career</h2>
+    <div class="timeline">
+      <div class="item">
+        <div class="role">[Job Title] — [Company]</div>
+        <div class="meta">[Start] – [End] · [Location]</div>
+        <p>[What you did, what you shipped, notable results.]</p>
+      </div>
+      <div class="item">
+        <div class="role">[Job Title] — [Company]</div>
+        <div class="meta">[Start] – [End] · [Location]</div>
+        <p>[What you did, what you shipped, notable results.]</p>
+      </div>
+      <div class="item">
+        <div class="role">[Job Title] — [Company]</div>
+        <div class="meta">[Start] – [End] · [Location]</div>
+        <p>[What you did, what you shipped, notable results.]</p>
+      </div>
+    </div>
+    <p><a href="cv.pdf">Download full CV (PDF)</a></p>
+  </div>
+</section>
+
+<section id="refs">
+  <div class="wrap">
+    <p class="eyebrow">References</p>
+    <h2>What people say</h2>
+    <div class="refs">
+      <blockquote>
+        <p>"[Quote about working with Scott.]"</p>
+        <cite>— [Name, Title/Company]</cite>
+      </blockquote>
+      <blockquote>
+        <p>"[Quote about working with Scott.]"</p>
+        <cite>— [Name, Title/Company]</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's work together</h2>
+    <p style="color:var(--fg-dim)">[email@skyline45.com] · [phone, optional] · Boise, ID</p>
+    <p>
+      <a href="https://instagram.com/REPLACE" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://vimeo.com/REPLACE" target="_blank" rel="noopener">Vimeo</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Skyline 45 Photography. All rights reserved.
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('.video-facade').forEach(function(el){
+  el.addEventListener('click', function(){
+    var id = el.getAttribute('data-vimeo-id');
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://player.vimeo.com/video/' + id + '?autoplay=1';
+    iframe.allow = 'autoplay; fullscreen; picture-in-picture';
+    iframe.allowFullscreen = true;
+    el.querySelector('img').remove();
+    el.querySelector('.play').remove();
+    el.prepend(iframe);
+  }, { once: true });
+});
+</script>
+
+</body>
+</html>
