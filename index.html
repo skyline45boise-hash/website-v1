@@ -110,6 +110,15 @@ blockquote{margin:0;padding:20px;background:var(--bg-alt);border-radius:4px;bord
 blockquote p{margin:0 0 10px;color:var(--fg-dim)}
 blockquote cite{font-style:normal;font-size:.85rem;color:var(--fg)}
 
+.cv-compact{padding:40px 0}
+.cv-compact h2{font-size:1.2rem}
+.cv-list{list-style:none;margin:0 0 16px;padding:0;font-size:.9rem}
+.cv-list li{display:flex;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid var(--line)}
+.cv-list .role{color:var(--fg)}
+.cv-list .meta{color:var(--fg-dim);white-space:nowrap}
+.cv-line{font-size:.85rem;color:var(--fg-dim);margin:4px 0}
+.cv-line strong{color:var(--fg)}
+
 footer{padding:40px 0;text-align:center;color:var(--fg-dim);font-size:.85rem}
 footer a{color:var(--fg-dim)}
 </style>
@@ -185,44 +194,19 @@ footer a{color:var(--fg-dim)}
   </div>
 </section>
 
-<section id="cv">
+<section id="cv" class="cv-compact">
   <div class="wrap">
     <p class="eyebrow">Experience</p>
     <h2>Career</h2>
-    <div class="timeline">
-      <div class="item">
-        <div class="role">Photography &amp; Video Production Manager — CBH Homes</div>
-        <div class="meta">2024 – Present · Boise, ID</div>
-        <p>Lead photography and video production teams for Idaho's largest homebuilder — overhauled department workflows, led major multimedia projects (Hearts Across the Valley, documentation of the Starship facility), and built an AI-powered face-detection media database making the entire photo/video archive searchable by person.</p>
-      </div>
-      <div class="item">
-        <div class="role">Owner &amp; Creative Director — Skyline 45 &amp; NSConover Photography</div>
-        <div class="meta">2013 – Present · Boise, ID</div>
-        <p>Founded and run commercial content studios covering photography, videography, and architectural visualization for clients including Lovevery, A&amp;E, Boise State University, and Treasure Valley architecture and design firms.</p>
-      </div>
-      <div class="item">
-        <div class="role">Photography, Editing &amp; Digital Marketing — Full Tilt Studio</div>
-        <div class="meta">2020 – 2024 · Boise, ID</div>
-        <p>Led visual production and content campaigns for Albertsons, Simplot, and Lamb Weston, including stop-motion, video, and photography work across multiple concurrent accounts.</p>
-      </div>
-      <div class="item">
-        <div class="role">Photography &amp; Marketing — Tri Town</div>
-        <div class="meta">2015 – 2020 · Boise, ID</div>
-        <p>Shot marketing campaign photography and produced website visual content supporting brand presence across digital and print channels.</p>
-      </div>
-    </div>
-
-    <h3 style="margin-top:32px">Education</h3>
-    <p style="color:var(--fg-dim)">
-      B.S. Business Management — Boise State University, 2024<br>
-      Conflict Management Certificate — Boise State University, 2024<br>
-      Management Certificate — PDP Global, 2023
-    </p>
-
-    <h3>Core Skills</h3>
-    <p style="color:var(--fg-dim)">Adobe Creative Suite (Photoshop, Lightroom, Illustrator, Premiere Pro) · Capture One · Blender · 3ds Max · Unreal Engine 5 · Creative briefs &amp; brand voice · Team leadership &amp; workflow design · AI-assisted production pipelines · Monday.com · Asana</p>
-
-    <p><a href="cv.pdf">Download full CV (PDF)</a></p>
+    <ul class="cv-list">
+      <li><span class="role">Photography &amp; Video Production Manager, CBH Homes</span><span class="meta">2024–Present</span></li>
+      <li><span class="role">Owner &amp; Creative Director, Skyline 45 / NSConover Photography</span><span class="meta">2013–Present</span></li>
+      <li><span class="role">Photography, Editing &amp; Digital Marketing, Full Tilt Studio</span><span class="meta">2020–2024</span></li>
+      <li><span class="role">Photography &amp; Marketing, Tri Town</span><span class="meta">2015–2020</span></li>
+    </ul>
+    <p class="cv-line"><strong>Education:</strong> B.S. Business Management, Boise State University (2024)</p>
+    <p class="cv-line"><strong>Skills:</strong> Adobe Creative Suite · Capture One · Blender · 3ds Max · Unreal Engine 5 · Team leadership &amp; workflow design</p>
+    <p class="cv-line"><a href="cv.pdf">Download full CV (PDF) &rarr;</a></p>
   </div>
 </section>
 
