@@ -129,11 +129,7 @@ footer a{color:var(--fg-dim)}
   <div class="wrap">
     <div class="brand">SKYLINE <span>45</span></div>
     <nav>
-      <a href="#work">Work</a>
-      <a href="#archviz">3D / ArchViz</a>
-      <a href="#video">Video</a>
       <a href="#cv">Experience</a>
-      <a href="#refs">References</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -149,8 +145,7 @@ footer a{color:var(--fg-dim)}
 </section>
 
 <section id="about">
-  <div class="wrap about-grid">
-    <img src="images/portrait.jpg" alt="Scott Conover" loading="lazy" width="200" height="240">
+  <div class="wrap">
     <div>
       <p class="eyebrow">About</p>
       <h2>Creative production leader, Boise-based</h2>
@@ -159,11 +154,14 @@ footer a{color:var(--fg-dim)}
   </div>
 </section>
 
+<!-- Portfolio, ArchViz, and Video sections are on hold until real photos/renders/videos are ready.
+     Re-enable by moving each <section> below back out of this comment block.
+
 <section id="work">
   <div class="wrap">
     <p class="eyebrow">Portfolio</p>
     <h2>Selected Work</h2>
-    <p style="color:var(--fg-dim);margin-bottom:24px">Drop images into <code>/images</code> and reference them below. Each figure is a full-size photo, cropped to a fixed aspect ratio for a clean grid — click to view full resolution.</p>
+    <p style="color:var(--fg-dim);margin-bottom:24px">Drop images into /images and reference them below. Each figure is a full-size photo, cropped to a fixed aspect ratio for a clean grid — click to view full resolution.</p>
     <div class="grid">
       <figure><a href="images/photo1.jpg" target="_blank" rel="noopener"><img src="images/photo1.jpg" alt="Describe this photo" loading="lazy"></a></figure>
       <figure><a href="images/photo2.jpg" target="_blank" rel="noopener"><img src="images/photo2.jpg" alt="Describe this photo" loading="lazy"></a></figure>
@@ -208,6 +206,8 @@ footer a{color:var(--fg-dim)}
   </div>
 </section>
 
+-->
+
 <section id="cv" class="cv-compact">
   <div class="wrap">
     <p class="eyebrow">Experience</p>
@@ -223,6 +223,8 @@ footer a{color:var(--fg-dim)}
     <p class="cv-line"><a href="cv.pdf">Download full CV (PDF) &rarr;</a></p>
   </div>
 </section>
+
+<!-- References section is on hold until there are real quotes to put here.
 
 <section id="refs">
   <div class="wrap">
@@ -241,15 +243,15 @@ footer a{color:var(--fg-dim)}
   </div>
 </section>
 
+-->
+
 <section id="contact">
   <div class="wrap" style="text-align:center">
     <p class="eyebrow">Contact</p>
     <h2>Let's work together</h2>
-    <p style="color:var(--fg-dim)">Conover302@gmail.com · 503-583-7002 · Boise, ID</p>
+    <p style="color:var(--fg-dim)"><span id="email-link">[enable JavaScript to view email]</span> · 503-583-7002 · Boise, ID</p>
     <p>
-      <a href="https://www.linkedin.com/in/scott-conover-/" target="_blank" rel="noopener">LinkedIn</a> ·
-      <a href="https://instagram.com/REPLACE" target="_blank" rel="noopener">Instagram</a> ·
-      <a href="https://vimeo.com/REPLACE" target="_blank" rel="noopener">Vimeo</a>
+      <a href="https://www.linkedin.com/in/scott-conover-/" target="_blank" rel="noopener">LinkedIn</a>
     </p>
   </div>
 </section>
@@ -260,6 +262,17 @@ footer a{color:var(--fg-dim)}
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+
+(function(){
+  var user = 'conover302', domain = 'gmail.com';
+  var address = user + '@' + domain;
+  var link = document.createElement('a');
+  link.href = 'mailto:' + address;
+  link.textContent = address;
+  var target = document.getElementById('email-link');
+  target.textContent = '';
+  target.appendChild(link);
+})();
 
 document.querySelectorAll('.video-facade').forEach(function(el){
   el.addEventListener('click', function(){
